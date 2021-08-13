@@ -1,3 +1,7 @@
+/**
+ * @param {Array.<String>} vitals
+ * @param {String} endpoint
+ */
 const reportMetrics = (vitals, endpoint) => {
   const beaconCallback = () => {
     const payload = {

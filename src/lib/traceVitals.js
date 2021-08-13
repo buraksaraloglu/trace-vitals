@@ -1,15 +1,18 @@
-// Vendors
-import {
-  getFCP, getTTFB,
-} from 'web-vitals';
+import { getFCP, getTTFB } from 'web-vitals';
 
-import {
-  FCP_SUPPORTED, TTFB_SUPPORTED, SENDBEACON_SUPPORTED,
-} from './constants';
+import { FCP_SUPPORTED, TTFB_SUPPORTED, SENDBEACON_SUPPORTED } from './constants';
 import createMetric from './createMetrics';
 import reportMetrics from './reportMetrics';
+import { isValidEndpoint } from './utils';
+import errorMessages from './errorMessages';
+
+/**
+ * @param {String} endpoint
+ */
 
 export const traceVitals = (endpoint) => {
+  if (!isValidEndpoint(endpoint)) throw new Error(errorMessages.INVALID_ENDPOINT);
+
   if (SENDBEACON_SUPPORTED) {
     let sent = false;
     const vitals = [];
