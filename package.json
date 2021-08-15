@@ -1,12 +1,13 @@
 {
   "name": "trace-vitals",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+  "bugs": {
+    "url": "https://github.com/buraksaraloglu/trace-vitals/issues"
   },
+  "homepage": "https://github.com/buraksaraloglu/trace-vitals",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && npx rollup -c",
