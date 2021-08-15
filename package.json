@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@buraksaraloglu"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "clean": "rm -rf ./dist",
