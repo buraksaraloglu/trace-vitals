@@ -1,5 +1,7 @@
 # trace-vitals
 
+*This is an experimental version. More metrics and improvements will be added.*  
+
 `trace-vitals` is a small script that traces the web-vitals and sends the reports to the given endpoint. The following metrics are collected:
 
 - [First Contentful Paint (FCP)](https://web.dev/fcp/)
